@@ -35,6 +35,11 @@ export default createConfig({
             of: [{ type: 'block' }]
           },
           {
+            name: 'mdxcontent',
+            title: 'MDX Content',
+            type: 'markdown'
+          },
+          {
             name: 'excerpt',
             title: 'Excerpt',
             type: 'string'
