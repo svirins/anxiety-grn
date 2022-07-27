@@ -24,12 +24,12 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              The source code for this site is{" "}
+              {"Также наш проект - блог об аддикции  "}
               <a
-                href={`https://github.com/zvirinz/anxiety-grean`}
+                href={`https://addict.cf`}
                 className="underline hover:text-success duration-200 transition-colors"
               >
-                available on GitHub
+                addict.cf
               </a>
               .
             </>
