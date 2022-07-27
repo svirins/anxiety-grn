@@ -1,9 +1,9 @@
 import cn from "classnames";
 import Image from "next/image";
 import Link from "next/link";
-import { urlForImage } from "../src/lib/sanity";
+import { urlForImage } from "@/lib/sanity";
 
-export default function CoverImage({ title, slug, image: source }) {
+export default function CoverImage({ title, slug = '', image: source }) {
   const image = source ? (
     <div
       className={cn("shadow-small", {

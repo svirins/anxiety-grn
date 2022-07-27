@@ -2,7 +2,6 @@
 .vercel
 node_modules
 out
-leerob-old-data
 dist
 .sanity
 pnpm-lock.yaml
