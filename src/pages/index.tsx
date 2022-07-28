@@ -9,10 +9,13 @@ import { sanityClient } from '@/lib/sanity.server';
 
 export default function Index({ allPosts }) {
   const aboutSlugPosition = allPosts.find((post) => post.slug === 'about');
-  const heroPost = allPosts[aboutSlugPosition];
-  const morePosts = allPosts.array.filter(
-    (_, index) => index != aboutSlugPosition
-  );
+  // const heroPost = allPosts[aboutSlugPosition];
+  // const morePosts = allPosts.array.filter(
+  //   (_, index) => index != aboutSlugPosition
+  // );
+  const heroPost = allPosts[0];
+  const morePosts = allPosts;
+
   return (
     <>
       <Layout>
@@ -37,7 +40,7 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = sanityClient.fetch(indexQuery);
+  const allPosts = await sanityClient.fetch(indexQuery);
   return {
     props: { allPosts }
   };

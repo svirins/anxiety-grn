@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.1",
-    "@sanity/webhook": "^2.0.0",
     "@tailwindcss/typography": "0.5.4",
     "classnames": "2.3.1",
     "date-fns": "2.29.1",

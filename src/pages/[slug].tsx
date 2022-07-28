@@ -66,7 +66,7 @@ export async function getStaticProps({ params, preview = false }) {
   const { post, morePosts } = await sanityClient.fetch(postQuery, {
     slug: params.slug
   });
-  const { html } = await mdxToHtml(post.mdxContent);
+  const { html } = await mdxToHtml(post.mdxcontent);
   return {
     props: {
       preview,
