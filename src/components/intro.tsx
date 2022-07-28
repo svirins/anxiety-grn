@@ -8,7 +8,7 @@ export default function Intro() {
         Советы врача-психотерапевта{' '}
         <a
           href="https://doctorgrean.by/"
-          className="underline hover:text-success duration-200 transition-colors"
+          className="hover:underline  hover:text-signal font-semibold duration-200 transition-colors"
         >
           Валерия Гриня
         </a>

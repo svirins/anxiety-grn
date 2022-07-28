@@ -1,5 +1,5 @@
 import { MDXRemote } from 'next-mdx-remote';
-import components from '@/components/MDXComponents';
+import components from '@/components/mdx-component';
 
 export default function PostBody({ mdxContent }) {
   return (

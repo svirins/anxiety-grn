@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const { fontFamily } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: ['./src/**/*.{ts,tsx}'],
@@ -9,9 +10,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        gray: colors.slate,
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
+        signal: 'rgb(255 49 46 / 95%)',
         success: '#0070f3',
         cyan: '#79FFE1'
       },

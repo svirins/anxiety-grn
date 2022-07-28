@@ -9,7 +9,7 @@ export default function PostPreview({ title, coverImage, excerpt, slug }) {
       </div>
       <h3 className="text-3xl mb-3 leading-snug">
         <Link href={`/${slug}`}>
-          <a className="hover:underline">{title}</a>
+          <a className="hover:underline  hover:text-signal">{title}</a>
         </Link>
       </h3>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
