@@ -3,7 +3,6 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
-  '@portabletext/react': ^1.0.6
   '@sanity/image-url': ^1.0.1
   '@sanity/webhook': ^2.0.0
   '@svgr/webpack': ^6.3.1
@@ -42,7 +41,6 @@ specifiers:
   typescript: ^4.7.4
 
 dependencies:
-  '@portabletext/react': 1.0.6_react@18.2.0
   '@sanity/image-url': 1.0.1
   '@sanity/webhook': 2.0.0
   '@tailwindcss/typography': 0.5.4_tailwindcss@3.1.6

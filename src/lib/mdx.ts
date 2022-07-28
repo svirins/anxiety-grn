@@ -25,7 +25,6 @@ export async function mdxToHtml(source: string) {
   });
 
   return {
-    html: mdxSource,
-    wordCount: source.split(/\s+/gu).length
+    html: mdxSource
   };
 }

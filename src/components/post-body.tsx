@@ -1,10 +1,17 @@
-import markdownStyles from './markdown-styles.module.css';
-import { PortableText } from '@portabletext/react';
+import { MDXRemote } from 'next-mdx-remote';
+import components from '@/components/MDXComponents';
 
-export default function PostBody({ content }) {
+export default function PostBody({ mdxContent }) {
   return (
-    <div className={`max-w-2xl mx-auto ${markdownStyles.markdown}`}>
-      <PortableText value={content} />
+    <div className="prose prose-slate max-w-2xl mx-auto">
+      <MDXRemote
+        {...mdxContent}
+        components={
+          {
+            ...components
+          } as any
+        }
+      />
     </div>
   );
 }

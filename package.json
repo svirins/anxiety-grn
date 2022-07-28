@@ -7,10 +7,10 @@
     "lint": "next lint --dir layouts",
     "check-types": "tsc --noEmit --pretty",
     "prepare": "husky install",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "studo": "pnpm sanity start"
   },
   "dependencies": {
-    "@portabletext/react": "^1.0.6",
     "@sanity/image-url": "^1.0.1",
     "@sanity/webhook": "^2.0.0",
     "@tailwindcss/typography": "0.5.4",

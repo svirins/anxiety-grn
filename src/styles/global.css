@@ -69,7 +69,7 @@
 }
 
 .highlight-line {
-  @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-signal dark:border-signal-dark dark:bg-gray-800;
+  @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-emerald-500;
 }
 
 .step > h3 {
@@ -85,4 +85,19 @@ table {
 
 .prose .callout > p {
   margin: 0 !important;
+}
+
+.prose p,
+.prose ul,
+.prose ol,
+.prose blockquote {
+  @apply my-6;
+}
+
+.prose h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+
+.prose h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
 }
