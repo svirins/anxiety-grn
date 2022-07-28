@@ -1,5 +1,5 @@
-import CoverImage from "./cover-image";
-import Link from "next/link";
+import CoverImage from './cover-image';
+import Link from 'next/link';
 
 export default function PostPreview({ title, coverImage, excerpt, slug }) {
   return (

@@ -1,5 +1,5 @@
-import CoverImage from "@/components/cover-image";
-import Link from "next/link";
+import CoverImage from '@/components/cover-image';
+import Link from 'next/link';
 
 export default function HeroPost({ title, coverImage, excerpt, slug }) {
   return (

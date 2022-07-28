@@ -1,14 +1,14 @@
-import Head from "next/head";
-import Container from "@/components/container";
-import MoreStories from "@/components/more-stories";
-import HeroPost from "@/components/hero-post";
-import Intro from "@/components/intro";
-import Layout from "@/components/layout";
-import { indexQuery } from "@/lib/queries";
-import { getClient, overlayDrafts } from "@/lib/sanity.server";
+import Head from 'next/head';
+import Container from '@/components/container';
+import MoreStories from '@/components/more-stories';
+import HeroPost from '@/components/hero-post';
+import Intro from '@/components/intro';
+import Layout from '@/components/layout';
+import { indexQuery } from '@/lib/queries';
+import { getClient, overlayDrafts } from '@/lib/sanity.server';
 
 export default function Index({ allPosts, preview }) {
-  const aboutSlugPosition = allPosts.find((post) => post.slug === "about");
+  const aboutSlugPosition = allPosts.find((post) => post.slug === 'about');
   const heroPost = allPosts[aboutSlugPosition];
   const morePosts = allPosts.array.filter(
     (_, index) => index != aboutSlugPosition
@@ -39,6 +39,6 @@ export default function Index({ allPosts, preview }) {
 export async function getStaticProps({ preview = false }) {
   const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery));
   return {
-    props: { allPosts, preview },
+    props: { allPosts, preview }
   };
 }
