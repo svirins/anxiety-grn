@@ -3,7 +3,7 @@ import components from '@/components/MDXComponents';
 
 export default function PostBody({ mdxContent }) {
   return (
-    <div className="prose prose-slate max-w-2xl mx-auto">
+    <div className="prose prose-slate max-w-3xl mx-auto w-full">
       <MDXRemote
         {...mdxContent}
         components={

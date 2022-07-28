@@ -16,7 +16,7 @@ export default function CoverImage({ title, slug = '', image: source }) {
         height={1000}
         alt={`Cover Image for ${title}`}
         src={urlForImage(source).height(1000).width(2000).url()}
-        className="grayscale roundel-lg"
+        className="grayscale rounded-lg"
       />
     </div>
   ) : (
