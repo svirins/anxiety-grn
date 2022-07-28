@@ -5,9 +5,9 @@ import HeroPost from '@/components/hero-post';
 import Intro from '@/components/intro';
 import Layout from '@/components/layout';
 import { indexQuery } from '@/lib/queries';
-import { getClient, overlayDrafts } from '@/lib/sanity.server';
+import { sanityClient } from '@/lib/sanity.server';
 
-export default function Index({ allPosts, preview }) {
+export default function Index({ allPosts }) {
   const aboutSlugPosition = allPosts.find((post) => post.slug === 'about');
   const heroPost = allPosts[aboutSlugPosition];
   const morePosts = allPosts.array.filter(
@@ -15,7 +15,7 @@ export default function Index({ allPosts, preview }) {
   );
   return (
     <>
-      <Layout preview={preview}>
+      <Layout>
         <Head>
           <title>Next.js Blog Example with Sanity</title>
         </Head>
@@ -36,9 +36,9 @@ export default function Index({ allPosts, preview }) {
   );
 }
 
-export async function getStaticProps({ preview = false }) {
-  const allPosts = overlayDrafts(await getClient(preview).fetch(indexQuery));
+export async function getStaticProps() {
+  const allPosts = sanityClient.fetch(indexQuery);
   return {
-    props: { allPosts, preview }
+    props: { allPosts }
   };
 }
