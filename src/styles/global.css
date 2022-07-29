@@ -20,6 +20,16 @@
   src: url(/fonts/ibm-plex-sans-var-italic.woff2) format('woff2');
 }
 
+::selection {
+  background-color: #10b981;
+  color: white;
+}
+
+html {
+  min-width: 480px;
+  scroll-behavior: smooth;
+}
+
 .prose .anchor {
   @apply absolute invisible no-underline;
 
@@ -119,5 +129,5 @@ table {
 }
 
 .prose em {
-  @apply text-gray-800;
+  @apply text-gray-900 font-medium;
 }

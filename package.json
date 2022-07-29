@@ -11,6 +11,7 @@
     "studo": "pnpm sanity start"
   },
   "dependencies": {
+    "@panelbear/panelbear-nextjs": "^1.0.3",
     "@sanity/image-url": "^1.0.1",
     "@tailwindcss/typography": "0.5.4",
     "classnames": "2.3.1",
