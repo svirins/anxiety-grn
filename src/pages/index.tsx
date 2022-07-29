@@ -9,12 +9,7 @@ import { sanityClient } from '@/lib/sanity.server';
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts.find((post) => post.slug === 'about');
-  // const heroPost = allPosts[aboutSlugPosition];
-  // const morePosts = allPosts.array.filter(
-  //   (_, index) => index != aboutSlugPosition
-  // );
   const morePosts = allPosts.filter((post) => post.slug !== 'about');
-
   return (
     <>
       <Layout>
