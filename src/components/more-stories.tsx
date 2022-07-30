@@ -5,7 +5,7 @@ export default function MoreStories({ posts }) {
   console.log(router.asPath);
   return (
     <section>
-      <h2 className="mb-8 text-6xl md:text-7xl font-semibold ">
+      <h2 className="mb-8 text-4xl md:text-6xl font-semibold ">
         {router.asPath === `/`
           ? `Виды тревожного расстройства`
           : `Другие виды

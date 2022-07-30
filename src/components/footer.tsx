@@ -9,7 +9,7 @@ export default function Footer() {
           <h3 className="text-4xl lg:text-5xl font-semibold text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
             <a
               href={`https://trevoga.org/about`}
-              className="mx-3 font-semibold hover:font-underline hover:text-signal"
+              className="mx-3 font-semibold hover:font-underline transform  duration-150 ease-in-out  transition-all hover:text-signal"
             >
               о проекте
             </a>
@@ -18,7 +18,7 @@ export default function Footer() {
             {'Также наш проект - блог об аддикции  '}
             <a
               href={`https://addict.cf`}
-              className="mx-3 font-semibold hover:underline hover:text-signal "
+              className="mx-3 font-semibold hover:underlinetransform  duration-150 ease-in-out  transition-all hover:text-signal "
             >
               addict.cf
             </a>

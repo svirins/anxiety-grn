@@ -8,7 +8,7 @@ export default function Alert() {
           {'Также наш проект - блог об аддикции  '}
           <a
             href={`https://addict.cf`}
-            className=" hover:text-signal underline  duration-200 transition-colors"
+            className=" hover:text-signal transform  duration-150 ease-in-out  transition-all"
           >
             addict.cf
           </a>
