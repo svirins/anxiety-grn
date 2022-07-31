@@ -32,7 +32,7 @@ export default function Post({ data }) {
           <>
             <article>
               <Head>
-                <title>{data.post.title} | SEO website title</title>
+                <title>{data.post.title} | Тревога: помощь и информация</title>
                 {data.post.coverImage && (
                   <meta
                     key="ogImage"

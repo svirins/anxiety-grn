@@ -14,7 +14,7 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with Sanity</title>
+          <title>Тревога: помощь и информация</title>
         </Head>
         <Container>
           <Intro />
